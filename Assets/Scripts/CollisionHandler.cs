@@ -14,30 +14,36 @@ public class CollisionHandler : MonoBehaviour
     AudioSource audioSource;
 
     bool isTransitioning = false;
+    bool collisionsEnabled = true;
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+
+    }
+
+    void Update()
+    {
+        HandleCheatKeys();  
     }
     private void OnCollisionEnter(Collision other)
     {
-        if (isTransitioning) return;
+        if (isTransitioning || !collisionsEnabled) return;
 
-
-        switch (other.gameObject.tag)
-        {
-            case "Finish":
-                Debug.Log("Landed!");
-                StartSuccessSequence();
-                break;
-            case "Friendly":
-                Debug.Log("Friendly collision");
-                break;
-            default:
-                Debug.Log("Crash!");
-                StartCrashSequence();
-                break;
-        }
+            switch (other.gameObject.tag)
+            {
+                case "Finish":
+                    Debug.Log("Landed!");
+                    StartSuccessSequence();
+                    break;
+                case "Friendly":
+                    Debug.Log("Friendly collision");
+                    break;
+                default:
+                    Debug.Log("Crash!");
+                    StartCrashSequence();
+                    break;
+            }
     }
 
     void StartCrashSequence()
@@ -83,5 +89,23 @@ public class CollisionHandler : MonoBehaviour
         }
 
         SceneManager.LoadScene(nextSceneIndex);
+    }
+
+    void HandleCheatKeys()
+    {
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            ToggleCollisions();
+        }
+        if (Input.GetKeyDown(KeyCode.L)) 
+        {
+            LoadNextLevel();
+        }
+    }
+
+    void ToggleCollisions()
+    {
+        collisionsEnabled = !collisionsEnabled;
+        Debug.Log($"CollisionsEnabled: {collisionsEnabled}");
     }
 }
