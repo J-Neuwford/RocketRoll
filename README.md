@@ -22,7 +22,7 @@ Pilot a malfunctioning rocket to escape a collapsing mining world.
 |                                                 |                     |
 | ----------------------------------------------- | ------------------- |
 | <img src="Icons/csIcon.png" width="50px"/>      | Scripting with C#   |
-| <img src="Icons/UnityIcon.png" width="50px"/>   | Unity Game Engine   |
+| <img src="Icons/unityIcon.png" width="50px"/>   | Unity Game Engine   |
 | <img src="Icons/blenderIcon.png" width="50px"/> | Blender 3D Modeling |
 |                                                 |                     |
 
