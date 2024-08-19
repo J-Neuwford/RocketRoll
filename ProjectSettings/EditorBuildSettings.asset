@@ -7,8 +7,11 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Over.unity
-    guid: e66ebed3b69ffc7468788653df8c41f9
+    guid: 1b0a287ede46d9d49866d35b745406e5
   - enabled: 1
     path: Assets/Scenes/Through.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    guid: e66ebed3b69ffc7468788653df8c41f9
+  - enabled: 1
+    path: Assets/Scenes/Plinth.unity
+    guid: 493e9fff42398604bb4a12d6939547c7
   m_configObjects: {}
