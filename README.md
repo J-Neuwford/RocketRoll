@@ -19,16 +19,16 @@ Pilot a malfunctioning rocket to escape a collapsing mining world.
 
 ## Tech
 
-|                                                        |                     |
-| ------------------------------------------------------ | ------------------- |
-| <img src="readmeAssets/csIcon.png" width="50px"/>      | Scripting with C#   |
-| <img src="readmeAssets/UnityIcon.png" width="50px"/>   | Unity Game Engine   |
-| <img src="readmeAssets/blenderIcon.png" width="50px"/> | Blender 3D Modeling |
-|                                                        |                     |
+|                                                 |                     |
+| ----------------------------------------------- | ------------------- |
+| <img src="Icons/csIcon.png" width="50px"/>      | Scripting with C#   |
+| <img src="Icons/UnityIcon.png" width="50px"/>   | Unity Game Engine   |
+| <img src="Icons/blenderIcon.png" width="50px"/> | Blender 3D Modeling |
+|                                                 |                     |
 
 ## Screen Shots
 
-![alt text](readmeAssets/crash2.png)
-![alt text](readmeAssets/fly.png)
-![alt text](readmeAssets/success.png)
-![alt text](readmeAssets/crash1.png)
+![alt text](Screenshots/crash2.png)
+![alt text](Screenshots/fly.png)
+![alt text](Screenshots/success.png)
+![alt text](Screenshots/crash1.png)
